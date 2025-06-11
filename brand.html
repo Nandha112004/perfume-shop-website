@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Light background for contrast */
+        }
+
+        .dropdown-container {
+    text-align: center;
+    margin: 130px 0; /* Space above and below */
+}
+
+h1 {
+    color: white;
+    font-family: 'Arial', sans-serif; /* Add a clean, modern font */
+    font-size: 36px; /* Increase size for a bold heading */
+    text-transform: uppercase; /* Make the title uppercase for emphasis */
+    letter-spacing: 2px; /* Add letter spacing for a sleek look */
+    margin-bottom: 30px; /* Add some space below the heading */
+}
+
+select {
+    padding: 12px 15px; /* Adjust padding for better clickability */
+    border-radius: 10px; /* Make corners more rounded */
+    border: 1px solid #ccc;
+    font-size: 18px; /* Slightly increase font size for readability */
+    width: 250px; /* Increase width for more room */
+    cursor: pointer;
+    background-color: #f9f9f9; /* Light background for dropdown */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+select:hover {
+    border-color: #888; /* Change border color on hover */
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.brand-list {
+    margin: 25px auto; /* Center horizontally by making left and right margins auto */
+    font-size: 18px;
+    line-height: 1.8;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #ff0000;
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+    width: fit-content; /* Ensure the width fits the content */
+}
+
+.brand-list ul {
+    padding-left: 20px;
+}
+
+.brand-list ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+
+
+        .image1{
+    background-image: url(image/pic1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+.image2{
+    background-image: url(image/pic2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+   
+}
+.image3{
+    background-image: url(image/pic3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image4{
+    background-image: url(image/pic4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    background-size: cover;
+}
+.image5{
+    background-image: url(image/pic10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image6{
+    background-image: url(image/pic8.jpg);
+    background-position: center;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image7{
+    background-image: url(image/pic9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery{
+    display: flex;
+    margin-top: 150px;
+    gap: 15px;
+    margin-left: 180px;
+    margin-right: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    display: flex;
+    margin-top: 150px;
+    margin-left: 180px;
+    margin-right: 80px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    flex: 1;
+    width: 100px;
+    border-radius: 10px;
+    height: 300px;
+    padding: 8px;
+    transition: all ease-in-out .4s;
+}
+.image:not(:hover){
+    filter:grayscale(100%);
+    z-index: 0;
+}
+.image:hover{
+    flex: 4;
+    filter: contrast(120%);
+    z-index: 1;
+    transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <h3 id="logo">PERFUME SHOP</h3>
+        <ul class="navlist">
+            <li><a href="home.html" class="navlinks">Home</a></li>
+            <li><a href="men.html" class="navlinks">Men</a></li>
+            <li><a href="women.html" class="navlinks">Women</a></li>
+            <li><a href="brand.html" class="navlinks active">Brands</a></li>
+            <li><a href="login.php" class="navlinks">Shop</a></li>
+            <li><a href="about.html" class="navlinks">About</a></li>
+            <li>
+                <a href="login.php" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="image/user-profile.png" alt="User Icon" style="width: 50px; height: 50px; border-radius: 50%; cursor: pointer;">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<center>
+    <div class="gallery">
+        <div class="image image1"></div>
+        <div class="image image2"></div>
+        <div class="image image3"></div>
+        <div class="image image4"></div>
+        <div class="image image5"></div>
+        <div class="image image6"></div>
+        <div class="image image7"></div>
+    </div>
+</center>
+
+<!-- Dropdown for Perfume Brands -->
+<div class="dropdown-container">
+    <h1>Perfume Brands A-Z</h1>
+    <select id="alphabetDropdown">
+        <option value="">Select a letter</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="H">H</option>
+        <option value="I">I</option>
+        <option value="J">J</option>
+        <option value="K">K</option>
+        <option value="L">L</option>
+        <option value="M">M</option>
+        <option value="N">N</option>
+        <option value="O">O</option>
+        <option value="P">P</option>
+        <option value="Q">Q</option>
+        <option value="R">R</option>
+        <option value="S">S</option>
+        <option value="T">T</option>
+        <option value="U">U</option>
+        <option value="V">V</option>
+        <option value="W">W</option>
+        <option value="X">X</option>
+        <option value="Y">Y</option>
+        <option value="Z">Z</option>
+    </select>
+    <div id="brandList" class="brand-list"></div>
+</div>
+
+
+
+<script>
+    const brands = {
+        A: ['Acqua di Parma', 'Azzaro', 'Armani', 'Atelier Cologne', 'Amouage', 'Al Haramain'],
+B: ['Burberry', 'Bvlgari', 'Balenciaga', 'Bond No. 9', 'Byredo', 'Boucheron'],
+C: ['Chanel', 'Calvin Klein', 'Creed', 'Carolina Herrera', 'Chopard', 'Clive Christian'],
+D: ['Dior', 'Dolce & Gabbana', 'David Beckham', 'Diptyque', 'Dsquared2'],
+E: ['Elie Saab', 'Escada', 'Eternity', 'Etat Libre d’Orange'],
+F: ['Ferragamo', 'Fendi', 'Fragonard', 'Franck Boclet', 'Frederic Malle'],
+G: ['Gucci', 'Giorgio Armani', 'Givenchy', 'Guess', 'Guerlain', 'Goutal'],
+H: ['Hugo Boss', 'Hermès', 'Hollister', 'Histoires de Parfums'],
+I: ['Issey Miyake', 'Iris Apfel', 'Indult', 'Initio Parfums'],
+J: ['Jo Malone', 'Jean Paul Gaultier', 'Jimmy Choo', 'Juliette Has a Gun'],
+K: ['Kenzo', 'Karl Lagerfeld', 'Kilian', 'Krigler'],
+L: ['Lancome', 'Lacoste', 'Lalique', 'Laura Biagiotti', 'Le Labo'],
+M: ['Marc Jacobs', 'Montblanc', 'Mugler', 'Maison Margiela', 'Mancera'],
+N: ['Narciso Rodriguez', 'Nina Ricci', 'Nasomatto', 'Nobile 1942'],
+O: ['Oscar de la Renta', 'Ormonde Jayne', 'Olfactive Studio'],
+P: ['Paco Rabanne', 'Prada', 'Perry Ellis', 'Penhaligon’s', 'Parfums de Marly'],
+Q: ['Quorum', 'Queen Latifah'],
+R: ['Ralph Lauren', 'Roberto Cavalli', 'Roja Parfums', 'Robert Piguet'],
+S: ['Sauvage', 'Sinner', 'Salvatore Ferragamo', 'Serge Lutens', 'Shiseido'],
+T: ['Tom Ford', 'Thierry Mugler', 'Tiziana Terenzi', 'Tiffany & Co.'],
+U: ['Ungaro', 'Ulric de Varens'],
+V: ['Versace', 'Valentino', 'Van Cleef & Arpels', 'Vilhelm Parfumerie'],
+W: ['Woods', 'Wildstone', 'Weil', 'Woody Oud'],
+X: ['Xerjoff', 'Xerjoff Join the Club'],
+Y: ['Yves Saint Laurent', 'Yohji Yamamoto'],
+Z: ['Zadig & Voltaire', 'Zegna', 'Zoologist Perfumes']
+
+    };
+
+    document.getElementById('alphabetDropdown').addEventListener('change', function() {
+        const selectedLetter = this.value;
+        const brandList = document.getElementById('brandList');
+
+        if (selectedLetter) {
+            const brandsForLetter = brands[selectedLetter];
+            brandList.innerHTML = brandsForLetter.map(brand => `<div>${brand}</div>`).join('');
+        } else {
+            brandList.innerHTML = '';
+        }
+    });
+</script>
+</body>
+</html>

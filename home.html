@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Shop</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="aos.css" />
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header  bg-dark-black >
+        <nav class="navbar">
+            <div class="logo"></div>
+           <h3 id="logo">PERFUME SHOP</h3>
+            <ul class="navlist">
+                <li>
+                    <a href="index.html" class="navlinks active">Home</a>
+                </li>
+                <li>
+                    <a href="men.html" class="navlinks">Men</a>
+                </li>
+                <li>
+                    <a href="women.html" class="navlinks">Women</a>
+                </li>
+                <li>
+                    <a href="brand.html" class="navlinks">Brands</a>
+                </li>
+                <li>
+                    <a href="login.php" class="navlinks">Shop</a>
+                </li>
+                <li>
+                    <a href="about.html" class="navlinks">About</a>
+                </li>
+                <li>
+                    <a href="login.php" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="image/user-profile.png" alt="User Icon" style="width: 50px; height: 50px; border-radius: 50%; cursor: pointer;">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container Section -->
+    <div class="main-container bg-dark-black">
+        <div class="circle"></div>
+
+        <div class="container" data-aos="zoom-in">
+            <div class="hero-section" data-aos="zoom-in-up">
+                <div class="left-container">
+                    <h1>THE FRAGRANCE OF LIFE</h1>
+                </div>
+                <div class="middle-container">
+                    <img src="images/perfume.png" alt="">
+                </div>
+                <div class="right-container">
+                    <p class="para" data-type="border-para">Embrace the elegance, awaken your senses, and surround yourself with the beauty that lingers in every moment. Discover the essence of happiness, love, and timeless memories, all captured in a bottle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+
+    <!-- ---Slider--- -->
+     <div class="scroll-container bg-dark-black" >
+        <div class="scroll" data-aos="zoom-in">
+            <h2 data-type="scroll-txt">50% OFF</h2>
+            <h2 data-type="scroll-txt">Order Now</h2>
+            <div class="break"></div>
+        </div>
+        <div class="scroll">
+            <h2 data-type="scroll-txt">50% OFF</h2>
+            <h2 data-type="scroll-txt">Order Now</h2>
+            <div class="break"></div>
+        </div>
+        <div class="scroll">
+            <h2 data-type="scroll-txt">50% OFF</h2>
+            <h2 data-type="scroll-txt">Order Now</h2>
+            <div class="break"></div>
+        </div>
+        <div class="scroll">
+            <h2 data-type="scroll-txt">50% OFF</h2>
+            <h2 data-type="scroll-txt">Order Now</h2>
+            <div class="break"></div>
+        </div>
+     </div>
+
+     <script src="aos.js"></script>
+     <script>
+       AOS.init({
+         offset:300,
+         duration:1400,
+       });
+ 
+       window.addEventListener("scroll", function() {
+     var header = document.querySelector("header");
+     header.classList.toggle("scrolled", window.scrollY > 50);
+ });
+     </script>
+
+
+
+
+     <main>
+        <!-- ---Story Section--- -->
+         <div class="section bg-light-black" >
+            <div class="container row" data-aos="zoom-in-up">
+                <div class="product-container">
+                    <img src="images/perfume1.png">
+                </div>
+                <div class="content">
+                    <h2>Our Little story</h2>
+                    <p class="para">In a world where every moment is a note in a grand symphony, "The Fragrance of Life" captures the essence of our journey. It's a metaphor for how each experience like a unique scent adds depth to our personal story. Just as a perfume is composed of various aromas, our lives are a blend of joys, sorrows, lessons, and love. This concept reminds us to cherish every moment, for together they create the unforgettable fragrance that defines who we are.</p>
+                    <a href="login.php" class="primary-btn">Read More</a>
+                </div>
+            </div>
+         </div>
+
+         <!-- ---Selling Products--- -->
+          <section class="section bg-dark-black" >
+            <div class="container column" data-aos="zoom-in-down">
+                <h2>Best Selling Products</h2>
+                <div class="gird-card-container" data-aos="zoom-in-up">
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume2.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume3.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume4.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume5.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume6.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume7.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume2.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume3.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume1.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Perfume</h4>
+                            <p class="price">₹680</p>
+                            <a href="login.php" class="primary-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+          </section>
+
+
+          <!-- ---Our Services--- -->
+           <section class="section bg-light-black">
+            <div class="container column" data-aos="zoom-in-down">
+                <h2>Our Services</h2>
+                <div class="gird-card-container"  data-aos="zoom-in-up">
+                    <div class="services-card">
+                        <h3>Free Shipping</h3>
+                        <p class="para">Experience the luxury of our exclusive perfumes with the added benefit of free shipping on all orders. Whether you're treating yourself or gifting a loved one, enjoy hassle-free delivery right to your doorstep. Shop now and indulge in the finest fragrances without any extra cost!</p>
+                    </div>
+                    <div class="services-card">
+                        <h3>Customer support</h3>
+                        <p class="para">Our dedicated customer support team is here to assist you every step of the way. Whether you have a question about a product or need help with your order, we're just a message or call away. Experience personalized service and prompt solutions with our 24/7 support.</p>
+                    </div>
+                    <div class="services-card">
+                        <h3>Payment Security</h3>
+                        <p class="para">Shop with confidence knowing your payment details are protected by the highest security standards. We use advanced encryption to safeguard your transactions, ensuring a safe and seamless checkout experience. Your privacy and security are our top priorities.</p>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+
+           <!-- ---Sale Section--- -->
+            <section class="section bg-dark-black Celebrate" >
+                <div data-aos="zoom-in">
+                <div class="glow1"></div>
+                <div class="glow2"></div>
+                <div class="container row">
+                    <div class="sales-product">
+                        <img src="images/sale perfume.png">
+                    </div>
+                    <div class="sale-content">
+                        <p class="sale-heading">Celebrate day Sale!</p>
+                        <h3 class="sale-txt">Save 25% Off On All <br> Collection</h3>
+                        <a href="#" class="primary-btn1">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- ---Gallery Section--- -->
+             <section class="section bg-light-black">
+                <div class="container column" data-aos="zoom-in-up">
+                    <h2>Our Perfume Gallery</h2>
+                    <div class="gallery-container" data-aos="zoom-in-down">
+                        <div class="image-gallery"><img src="images/gallery1.jpg"></div>
+                        <div class="image-gallery"><img src="images/gallery2.jpg"></div>
+                        <div class="image-gallery"><img src="images/gallery3.jpg"></div>
+                        <div class="image-gallery"><img src="images/gallery4.jpg"></div>
+                        <div class="image-gallery"><img src="images/gallery5.jpg"></div>
+                        <div class="image-gallery"><img src="images/gallery6.jpg"></div>
+                        <div class="image-gallery"><img src="images/gallery7.jpg"></div>
+                        <div class="image-gallery"><img src="images/gallery8.jpg"></div>
+                    </div>
+                </div>
+             </section>
+     </main>
+
+     <!-- ---Footer Section--- -->
+     <footer class="section bg-dark-black">
+        <div class="container">
+            <p class="footer-txt">Copyright &copy; 2024, All rights are reserved by Perfume Shop</p>
+        </div>
+    </footer>
+    
+
+
+     
+    
+</body>
+</html>
